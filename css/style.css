@@ -13,7 +13,7 @@
   } */
 
 .inner_header{
-    width: 30%;
+    width: 35%;
     height: 100%;
     margin: 0 auto;  
     /* -webkit-box-shadow: 0 05px 4px -4px #777;
@@ -86,16 +86,7 @@ font-size: 18px;
   }
 
 
-/* footer{
-    position: relative;
-    bottom: 0;
-    height: 125px;
-    width: 100%;
-    background-color:  #33B484;
-    font-family: Segoe UI;
-    font-size: 13px;
-    padding: 40px 0px 0px 0px;
-  }  */
+
 /* .footercontent{
   width: 80%;
   height: 100%;
@@ -170,25 +161,47 @@ font-size: 18px;
   
     .circle-without-text {
       border-radius: 50%;
-      width: 400px;
-      height: 400px;
-      top: 400px;
-      right: 40px;
+      width: 350px;
+      height: 350px;
+      top: 500px;
+      right: 500px;
      
-      background-color: #33B484;
+      background: rgb(141,235,169);
+      background: linear-gradient(90deg, rgba(141,235,169,1) 8%, rgba(107,217,142,1) 18%, rgba(33,204,113,1) 36%, rgba(36,196,89,1) 53%, rgba(14,199,116,1) 76%, rgba(139,209,164,1) 100%);
+      -webkit-box-shadow: 0 05px 4px -4px rgb(109, 109, 109);
+      -moz-box-shadow: 0 05px 4px -4px rgb(156, 156, 156);
+      box-shadow: 0 05px 4px -4px rgb(107, 107, 107);
+   
       position: absolute;
    }
     .text-inside-circle {
       position: absolute;
-      font-size: 17px;
+      font-size: 20px;
+      margin:15px;
       top: 0;
       bottom: 0;
       display: flex;
+      padding: 5px;
       align-items: center;
       text-align: center; 
       font-weight: bold;
       justify-content: center;
    }
+
+   .text-inside-circle h1{
+    position: relative;
+    font-size: 25px;
+    margin:10px;
+    top: 0;
+    color: white;
+    bottom: 0;
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    text-align: center; 
+    font-weight: bold;
+    justify-content: center;
+ }
 /* .text{
     left: 250px;
     top: 640px;
@@ -201,10 +214,20 @@ font-size: 18px;
     }   */
         
 
-        
+footer{
+      position: relative;
+      height: 205px;
+      width: 100%;
+      bottom: 0px;
+      background-color:  #33B484;
+      font-family: Segoe UI;
+      font-size: 13px;
+      padding: 40px 0px 0px 0px;
+      z-index: -1;
+    }     
 .footer{
   padding: 20px;
   margin:20px;
-  position: relative;
-  bottom: 0px;
+  position: absolute;
+  bottom: 100px;
 }
