@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: Segoe UI;
+  }
+
+/* .header{
+    width: 100%;
+    height: 125px;
+    background-color: #ffffff ;
+  } */
+
+.inner_header{
+    width: 30%;
+    height: 100%;
+    margin: 0 auto;  
+    /* -webkit-box-shadow: 0 05px 4px -4px #777;
+    -moz-box-shadow: 0 05px 4px -4px #777;
+    box-shadow: 0 05px 4px -4px #777; */
+  }
+  
+.logo_container{
+    height: 100%;
+    display: table;
+    float: left;
+  
+  }
+ .logo_container img{
+    display:inline-block;
+    margin: 15px;
+    vertical-align: middle;
+    width: 105px;
+    height: 100px;
+}
+  
+/* .logo_container h1{
+    color: white;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-family: Segoe UI;
+    font-size: 30px;
+    font-weight: 300px;
+  } */
+  
+.logo_container h1:hover {
+  color: rgb(163, 202, 163);
+  }
+  
+  
+.navigation{
+    overflow: hidden;
+    background:rgb(163, 202, 163);
+    display: flex;
+    border: 1px solid transparent;
+    box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
+    border-radius: 24px;
+    float: right;
+    margin-top: 30px;
+         -webkit-box-shadow: 0 05px 4px -4px #777;
+         -moz-box-shadow: 0 05px 4px -4px #777;
+         box-shadow: 0 05px 4px -4px #777;
+      
+  
+  }
+.navigation a {
+float: right;
+display: block;
+text-align: center;
+padding: 20px 30px;
+text-decoration: none;
+font-family: Segoe UI;
+height: 100%;
+color:white;
+font-size: 18px;
+  }
+.navigation a:hover{
+    color: rgb(55, 56, 55);
+  }
+  /* Add an active class to highlight the current page */
+.navigation a.active {
+    background-color: rgb(206, 206, 206);
+    border-radius: 20px;
+  }
+
+
+/* footer{
+    position: relative;
+    bottom: 0;
+    height: 125px;
+    width: 100%;
+    background-color:  #33B484;
+    font-family: Segoe UI;
+    font-size: 13px;
+    padding: 40px 0px 0px 0px;
+  }  */
+/* .footercontent{
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;  
+} */
+#erasmus {
+	position: absolute;
+	width: 277px;
+	height: 56px;
+	left: 15px;
+}
+#indvm {
+	position: absolute;
+	width: 149px;
+	height: 99px;
+	left: 337px;
+}
+
+#ICSD {
+	position: absolute;
+	width: 234px;
+	height: 99px;
+	left: 558px;
+}
+#pics {
+	position: absolute;
+	width: 426px;
+	height: 320px;
+	left: 142px;
+	top: 200px;
+  z-index: -1;
+  
+}
+
+
+#Path_green{
+	position: relative;
+	width: 1366px;
+	height: 786.849px;
+	left: 0px;
+	top: -150px;
+	overflow: visible;
+  z-index: -1;
+  opacity: 0.9;
+	fill: rgba(51,180,132,1);
+  
+}
+
+#title h1{
+    position: absolute;
+    top: 300px;
+    right:500px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 45px;
+    color: rgb(255, 255, 255);
+    }  
+    
+/* #textcontainer p{
+    left: 250px;
+    top: 640px;
+    text-align: justify;
+    position: absolute;
+    text-align: center;
+    font-family: Segoe UI;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    }   */
+  
+    .circle-without-text {
+      border-radius: 50%;
+      width: 400px;
+      height: 400px;
+      top: 400px;
+      right: 40px;
+     
+      background-color: #33B484;
+      position: absolute;
+   }
+    .text-inside-circle {
+      position: absolute;
+      font-size: 17px;
+      top: 0;
+      bottom: 0;
+      display: flex;
+      align-items: center;
+      text-align: center; 
+      font-weight: bold;
+      justify-content: center;
+   }
+/* .text{
+    left: 250px;
+    top: 640px;
+    text-align: justify;
+    position: absolute;
+    text-align: left;
+    font-family: Segoe UI;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    }   */
+        
+
+        
+.footer{
+  padding: 20px;
+  margin:20px;
+  position: relative;
+  bottom: 0px;
+}
