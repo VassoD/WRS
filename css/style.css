@@ -19,7 +19,7 @@ body{
 .headingbox{
   background-color: #33B484;
   height: 150px;
-  position: absolute;
+  position: relative;
   top: 0;
   margin-left: 20%;
   border-bottom-left-radius: 50px;
@@ -144,7 +144,7 @@ body{
 	width: 1366px;
 	height: 786.849px;
 	left: 0px;
-	top: -150px;
+	top: -180px;
 	overflow: hidden;
   z-index: -1;
   opacity: 0.9;
@@ -330,4 +330,58 @@ footer{
   }
 
 
+}
+
+
+.container {
+  position: relative;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top:50px;
+  overflow: hidden;
+  padding-top: 30px;
+  background: #e7e7e7;
+  color: rgb(53, 146, 81);
+  font-family: Tahoma, Arial, sans-serif;
+  font-size: 14px;
+  min-height: 500px;
+  /* border: 5px solid; */
+  padding: 10px;
+  box-shadow:
+      0 5.8px 2.2px rgba(112, 111, 111, 0.034),
+      0 6.7px 5.3px rgba(110, 110, 110, 0.048),
+      0 12.5px 10px rgba(0, 0, 0, 0.06),
+      0 22.3px 17.9px rgba(100, 100, 100, 0.072),
+      0 41.8px 33.4px rgba(117, 117, 117, 0.086),
+      0 100px 80px rgba(139, 139, 139, 0.12);
+  border-radius: 40px;
+    }
+
+
+.summary{
+
+  position: relative;
+  width: 530px;
+  height: 450px;
+  float: left;
+  border-radius: 10%;
+  background-color: #33B484;
+  position: relative;
+  box-shadow:
+      0 5.8px 2.2px rgba(112, 111, 111, 0.034),
+      0 6.7px 5.3px rgba(110, 110, 110, 0.048),
+      0 12.5px 10px rgba(0, 0, 0, 0.06),
+      0 22.3px 17.9px rgba(100, 100, 100, 0.072),
+      0 41.8px 33.4px rgba(117, 117, 117, 0.086),
+      0 100px 80px rgba(139, 139, 139, 0.12);
+
+}
+
+.summary p{
+    top: 20px;
+    position: relative;
+    font-size: 14px;
+    margin:25px;
+    color: #000;
+    text-align: left; 
 }
