@@ -13,44 +13,53 @@
     background-color: #ffffff ;
   } */
 body{
+
   background-color: rgb(221, 221, 221) !important
 
 }
-.headingbox{
-  background-color: #33B484;
-  height: 150px;
+main{
   position: relative;
+
+  /* overflow: hidden; */
+  /* padding-top: 30px; */
+ 
+  /* min-height: 700px;   */
+  height:100%;
+  /* border: 5px solid; */
+ 
+}
+.headingbox{
+  background-color: #43b98e;
+  height: 150px;
   top: 0;
   margin-left: 20%;
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
   width: 60%;
   z-index: -1;
-
-
+  position: relative;
 }
 .inner_header{
-    width: 35%;
+  position: relative;
+    width: 45%;
     height: 100%;
     margin: 0 auto;  
-    /* -webkit-box-shadow: 0 05px 4px -4px #777;
-    -moz-box-shadow: 0 05px 4px -4px #777;
-    box-shadow: 0 05px 4px -4px #777; */
+
   }
   
-.logo_container{
-    height: 100%;
+/* .logo_container{
+    height: 90%;
     display: table;
     float: left;
   
-  }
- .logo_container img{
+  } */
+ /* .logo_container img{
     display:inline-block;
     margin: 15px;
     vertical-align: middle;
     width: 105px;
     height: 100px;
-}
+} */
   
 /* .logo_container h1{
     color: white;
@@ -68,6 +77,7 @@ body{
   
   
 .navigation{
+  position: relative;
  overflow: visible;
  background:rgb(163, 202, 163);
  display: flex;
@@ -83,6 +93,7 @@ body{
  
   }
 .navigation a {
+  position: relative;
   float: right;
   display: block;
   text-align: center;
@@ -96,38 +107,11 @@ body{
 .navigation a:hover{
     color: rgb(55, 56, 55);
   }
-  /* Add an active class to highlight the current page */
 .navigation a.active {
   background-color: rgb(206, 206, 206);
   border-radius: 20px;
   }
 
-
-
-/* .footercontent{
-  width: 80%;
-  height: 100%;
-  margin: 0 auto;  
-} */
-#erasmus {
-	width: 277px;
-	height: 56px;
-	left: 15px;
-  margin:30px;
-}
-#indvm {
-  margin:30px;
-	width: 149px;
-	height: 99px;
-	left: 337px;
-}
-
-#ICSD {
-  margin:30px;
-	width: 234px;
-	height: 99px;
-	left: 558px;
-}
 #pics {
 	position: absolute;
 	width: 426px;
@@ -140,13 +124,11 @@ body{
 
 
 #Path_green{
-	position: relative;
+	position: absolute;
 	width: 1366px;
 	height: 786.849px;
-	left: 0px;
-	top: -180px;
-	overflow: hidden;
-  z-index: -1;
+	top: -25px;
+  z-index: -5;
   opacity: 0.9;
 	fill: rgba(51,180,132,1);
   
@@ -158,44 +140,26 @@ body{
   right:500px;
   white-space: nowrap;
   text-align: left;
-  font-family: Segoe UI;
   font-style: italic;
   font-weight: bold;
   font-size: 45px;
   color: rgb(255, 255, 255);
   }  
-    
-/* #textcontainer p{
-  left: 250px;
-  top: 640px;
-  text-align: justify;
-  position: absolute;
-  text-align: center;
-  font-family: Segoe UI;
-  font-size: 18px;
-  color: rgb(0, 0, 0);
-  }   */
-/* .circleabout{
-  border-radius: 50px;
-  width: 200px;
-  height: 100px;
-  top: 50px;
-  left: 100px;
-  border: 4px solid  #33B484;
-  position: relative;
-  } */
+
+/* -----------------------------CIRCLE----------------------------- */
 .circle-without-text {
   border-radius: 50%;
   width: 330px;
   height: 330px;
   top: 300px;
   right: 100px;
+  margin: 100px;
   background: rgb(141,235,169);
   background: linear-gradient(90deg, rgba(141,235,169,1) 8%, rgba(107,217,142,1) 18%, rgba(33,204,113,1) 36%, rgba(36,196,89,1) 53%, rgba(14,199,116,1) 76%, rgba(139,209,164,1) 100%);
   -webkit-box-shadow: 0 05px 4px -4px rgb(109, 109, 109);
   -moz-box-shadow: 0 05px 4px -4px rgb(156, 156, 156);
   box-shadow: 0 05px 4px -4px rgb(107, 107, 107);
-  position: absolute;
+  position: relative;
    }
 .circle-without-text:hover{
   transform: scale(1.3);
@@ -240,72 +204,146 @@ body{
   transform: scale(2);
   color:#3d3d3d
 }
- 
-/* .text{
-    left: 250px;
-    top: 640px;
-    text-align: justify;
-    position: absolute;
-    text-align: left;
-    font-family: Segoe UI;
-    font-size: 18px;
-    color: rgb(0, 0, 0);
-    }   */
-
-
-/*??  */
-
-  /* FOOTER */
+/* --------------------------------------------------------------- */
+/*------------------------- FOOTER -------------------------------*/
 footer{
   position: relative;
   height: 205px;
   width: 100%;
-  bottom: 0px;
-  background-color:  #33B484;
-  font-family: Segoe UI;
+
+  background-color:  #43b98e;
   font-size: 13px;
   padding: 40px 0px 0px 0px;
-  z-index: -1;
-    }     
-
-/* ABOUT CSS */
-.whoweare{
-  font-size: 25px;
-  margin:20px;
-  padding-left:20px;
-  font-weight:bolder;
-  color: #3a3a3a;
-  text-align: center; 
-  border: 4px solid  #33B484;
-  position: absolute;
-  border-radius: 50px;
-  width: 200px;
-  height: 100px;
-  top: 150px;
-  left: 10%; 
-
-}
-
-.textabout{
-  border-radius: 50px;
-  top: 150px;
-  padding: 30px;
-  background-color:   #33B484;
-  position: absolute;
-  width: 580px;
-  left: 40%; 
+  z-index: 0;
   
+    }     
+/* .footercontent{
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;  
+} */
+#erasmus {
+	width: 277px;
+	height: 56px;
+	left: 15px;
+  margin:30px;
+}
+#indvm {
+  margin:30px;
+	width: 149px;
+	height: 99px;
+	left: 337px;
+}
+
+#ICSD {
+  margin:30px;
+	width: 235px;
+	height: 100px;
+	left: 558px;
+}
+/* ------------------------------------------------------------- */
+/* ------------------------------ABOUT-------------------------- */
+.summary{
+  width: 630px;
+  height: 550px;
+  /* float: left; */
+  border-radius: 10%;
+  background-color: #43b98e;
+  position: relative;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
 }
 
+.summary p{
+    font-size: 17px;
+    top: 20px;
+    position: relative;
+    margin:25px;
+    color: #000;
+    text-align: left; 
+}
+
+/* section{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-size: 1.1em;
+    line-height: 1.5;
+    text-align: center;
+
+} */
+
+  /* list-style-type: none;
+  width: 80%;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1em;
+    background-color: azure;
+    color: #333; */
+  
+/* ---------------------------------------------------------------------- */
+/*----------------------------- ACTIVITIES -------------------------------*/
+/* .container {
+  position: relative;
+  margin:100px;
+  background: #e7e7e7;
+  font-size: 14px;
+  min-height: 700px;  
+  height:100%;
+  padding:15px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 40px;
+    } */
+
+.activities-content{
+  padding:15px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 40px;
+  margin:100px;
+  position: relative;
+
+  background-color: #e7e7e7;
+
+  
+}
+.grid{
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-rows: repeat(3);
+  gap: 10px;
+  padding: 10px;
+
+}
+
+.contenttitle{
+  font-size: 20px;
+  color:#43b98e;
+  margin: 10px;
+  text-align: center;
+  border: 3px solid grey;
+  border-radius:20px;
+  
+}
+.container p{
+  padding:10px;
+  font-size: 14px;
+font-weight:350 ;
+}
+
+
+/* -------------------------------------------------------------- */
+
+/* --------------------------------MEDIA--------------------------- */
 
 @media only screen and (max-width : 620px) {
 
   body {
     background-color: rgb(255, 255, 255);
+
   }
   .inner_header{
-  width: 100%;
+  width: 60%;
   }
   .navigation{
     width: 100%;
@@ -328,60 +366,108 @@ footer{
     width: 100%;
     position: relative;
   }
-
+  .activities-content{
+     padding: 10px;
+    margin: 0;
+  }
+.grid{
+  display: grid;
+  grid-template-columns:fit-content(40%);
+  grid-template-rows:fit-content(40%);
+  gap: 10px;
 
 }
+.content{
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+img{
+  grid-row: 3/4;
+  width:200px;
+}
+p{
+font-size: 12px;}
+}
 
-
-.container {
-  position: relative;
-  margin-left: 100px;
-  margin-right: 100px;
-  margin-top:50px;
-  overflow: hidden;
-  padding-top: 30px;
-  background: #e7e7e7;
-  color: rgb(53, 146, 81);
-  font-family: Tahoma, Arial, sans-serif;
-  font-size: 14px;
-  min-height: 500px;
-  /* border: 5px solid; */
-  padding: 10px;
-  box-shadow:
-      0 5.8px 2.2px rgba(112, 111, 111, 0.034),
-      0 6.7px 5.3px rgba(110, 110, 110, 0.048),
-      0 12.5px 10px rgba(0, 0, 0, 0.06),
-      0 22.3px 17.9px rgba(100, 100, 100, 0.072),
-      0 41.8px 33.4px rgba(117, 117, 117, 0.086),
-      0 100px 80px rgba(139, 139, 139, 0.12);
+.content{
+  padding:20px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   border-radius: 40px;
-    }
+  margin:200px;
+  margin-top: 400px;
 
-
-.summary{
-
+  font-size:20px;
   position: relative;
-  width: 530px;
-  height: 450px;
-  float: left;
-  border-radius: 10%;
-  background-color: #33B484;
-  position: relative;
-  box-shadow:
-      0 5.8px 2.2px rgba(112, 111, 111, 0.034),
-      0 6.7px 5.3px rgba(110, 110, 110, 0.048),
-      0 12.5px 10px rgba(0, 0, 0, 0.06),
-      0 22.3px 17.9px rgba(100, 100, 100, 0.072),
-      0 41.8px 33.4px rgba(117, 117, 117, 0.086),
-      0 100px 80px rgba(139, 139, 139, 0.12);
+  background-color: #e7e7e7;
 
 }
+.content p{
+  padding: 20px;
+}
+.partners{
+  text-align:center;
+  margin:50px 200px;
+  border-radius: 40px;
+  position: relative;
+  padding:40px;
+  /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+  color: #444;
+  background-color: #e7e7e7;
+}
+.partners h2{
+  border: 3px solid grey;
+  border-radius:20px;
+  margin-bottom: 20px;
+}
+h6{
+  color: #444;
+}
 
-.summary p{
-    top: 20px;
-    position: relative;
-    font-size: 14px;
-    margin:25px;
-    color: #000;
-    text-align: left; 
+.activities-content h2{
+  
+  border: 4px solid rgb(40, 197, 171);
+  width: max-content; /*MONO STA GRAMMATA TO PLASIO!*/
+  border-radius: 40px;
+  padding:10px;
+  margin: 90px 70px 70px 50px;
+  float: left;
+  color:#444;
+}
+.activities-content h3{
+  margin:60px ;
+  color:#444;
+  font-weight: 500;
+
+}
+#icsdcompany{
+  float: right;
+  margin: 48px;
+  width:280px;
+  height:130px;
+}
+.titlecolor{
+  font-size:20px;
+  color: #43b98e;
+}
+.activities-content p{
+font-weight: 200;
+}
+.company{
+  margin:30px;
+
+  width: 45%;
+  height:45%;
+
+}
+.text{
+  float:left;
+  width: 70%;
+
+}
+li{
+  color:#25998a;
+  float: left;
+  font-weight: 600;
+
 }
