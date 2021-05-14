@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    text-decoration: none;
     font-family: Segoe UI;
     
   }
@@ -12,24 +11,24 @@
     height: 125px;
     background-color: #ffffff ;
   } */
+  
 body{
-
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
   background-color: rgb(221, 221, 221) !important
 
 }
-main{
-  position: relative;
-
-  /* overflow: hidden; */
-  /* padding-top: 30px; */
- 
-  /* min-height: 700px;   */
-  height:100%;
-  /* border: 5px solid; */
- 
+.imgcontent{
+  padding:50px;
 }
+.imgcontent img{
+  width:100%;
+  height: auto;
+}
+
 .headingbox{
-  background-color: #43b98e;
+  background-color:rgb(129, 187, 166);
   height: 150px;
   top: 0;
   margin-left: 20%;
@@ -79,7 +78,7 @@ main{
 .navigation{
   position: relative;
  overflow: visible;
- background:rgb(163, 202, 163);
+ background: #9acebb;
  display: flex;
  border: 1px solid transparent;
  box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
@@ -112,7 +111,7 @@ main{
   border-radius: 20px;
   }
 
-#pics {
+#picsshoes {
 	position: absolute;
 	width: 426px;
 	height: 320px;
@@ -123,22 +122,20 @@ main{
 }
 
 
-#Path_green{
+.Path_green{
 	position: absolute;
 	width: 1366px;
 	height: 786.849px;
 	top: -25px;
-  z-index: -5;
+  z-index: -10;
   opacity: 0.9;
-	fill: rgba(51,180,132,1);
-  
+	fill: rgb(157, 201, 185);
 }
 
 #title h1{
   position: absolute;
   top: 300px;
-  right:500px;
-  white-space: nowrap;
+  left:650px;
   text-align: left;
   font-style: italic;
   font-weight: bold;
@@ -147,7 +144,7 @@ main{
   }  
 
 /* -----------------------------CIRCLE----------------------------- */
-.circle-without-text {
+/* .circle-without-text {
   border-radius: 50%;
   width: 330px;
   height: 330px;
@@ -163,8 +160,8 @@ main{
    }
 .circle-without-text:hover{
   transform: scale(1.3);
-}
-.text-inside-circle {
+} */
+/* .text-inside-circle {
   top: 40px;
   position: absolute;
   font-size: 20px;
@@ -177,9 +174,9 @@ main{
   justify-content: center;
   display: block;
 
-   }
+   } */
 
-.text-inside-circle h1{
+/* .text-inside-circle h1{
     position: relative;
     font-size: 25px;
     margin:10px;
@@ -190,8 +187,8 @@ main{
     text-align: center; 
     font-weight: bold;
     justify-content: center;
- }
- .readmore{
+ } */
+ /* .readmore{
    color:#3d3d3d;
    font-size: 16px;
  }
@@ -203,65 +200,42 @@ main{
 .material-icons:hover {
   transform: scale(2);
   color:#3d3d3d
-}
+} */
 /* --------------------------------------------------------------- */
 /*------------------------- FOOTER -------------------------------*/
 footer{
   position: relative;
-  height: 205px;
+  height: auto;
   width: 100%;
-  border-radius: 50px 50px 0 0;
-  background-color:  #43b98e;
+  border-radius: 40px 40px 0 0;
+  background-color: rgb(129, 187, 166);
   font-size: 13px;
-  padding: 40px 0px 0px 0px;
   z-index: 0;
   
     }     
-/* .footercontent{
+.footercontent img{
+  margin: 40px;
   width: 80%;
-  height: 100%;
-  margin: 0 auto;  
-} */
+  height: auto;
+}
+
 #erasmus {
 	width: 277px;
 	height: 56px;
-	left: 15px;
-  margin:30px;
 }
 #indvm {
-  margin:30px;
 	width: 149px;
 	height: 99px;
-	left: 337px;
 }
 
 #ICSD {
-  margin:30px;
 	width: 235px;
 	height: 100px;
-	left: 558px;
+
 }
 /* ------------------------------------------------------------- */
 /* ------------------------------ABOUT-------------------------- */
-.summary{
-  width: 630px;
-  height: 550px;
-  /* float: left; */
-  border-radius: 10%;
-  background-color: #43b98e;
-  position: relative;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 
-}
-
-.summary p{
-    font-size: 17px;
-    top: 20px;
-    position: relative;
-    margin:25px;
-    color: #000;
-    text-align: left; 
-}
 
 /* section{
     margin:0;
@@ -295,13 +269,12 @@ footer{
   border-radius: 40px;
     } */
 
-.activities-content{
+.main-content{
   padding:15px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   border-radius: 40px;
   margin:100px;
   position: relative;
-
   background-color: #e7e7e7;
 
   
@@ -317,18 +290,112 @@ footer{
 }
 
 .contenttitle{
-  font-size: 20px;
-  color:#43b98e;
+  font-size: 18px;
+  color:rgb(111, 161, 143);
   margin: 10px;
   text-align: center;
+  
+
+}
+.content{
+  padding:20px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 40px;
+  margin:50px 150px;
+  margin-top: 400px;
+  font-size:20px;
+  position: relative;
+  background-color: #e7e7e7;
+
+}
+.content p{
+  padding: 20px; 
+}
+.content a{
+  text-decoration: none;
+
+}
+.partners{
+  text-align:center;
+  margin:50px 150px;
+  border-radius: 40px;
+  position: relative;
+  padding:40px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  color: #444;
+  background-color: #e7e7e7;
+}
+.partners h2{
   border: 3px solid grey;
   border-radius:20px;
-  
+  margin-bottom: 20px;
 }
-.container p{
+h6{
+  color: #444;
+}
+
+.main-content > h2{
+  
+  border: 4px solid rgb(107, 192, 178);
+  width: max-content; /*MONO STA GRAMMATA TO PLAISIO!*/
+  border-radius: 40px;
   padding:10px;
-  font-size: 14px;
-font-weight:350 ;
+  margin: 60px 70px 40px 50px;
+  float: left;
+  color:#444;
+}
+.main-content > h3{
+  margin:60px ;
+  color:#444;
+  font-weight: 500;
+
+}
+#icsdcompany{
+  float: right;
+  margin: 40px;
+  width:280px;
+  height:130px;
+}
+.titlecolor{
+  font-size:20px;
+  color: rgb(129, 187, 166);
+}
+.main-content p{
+font-weight: 200;
+}
+.company{
+  margin:30px;
+
+  width: 45%;
+  height:45%;
+
+}
+.text{
+  float:left;
+  width: 70%;
+
+}
+li{
+  color: rgb(129, 187, 166);
+  float: left;
+  font-weight: 600;
+
+}
+
+.contacttext{
+  margin-left: 350px;
+}
+
+.contacttext a{
+  color: rgb(53, 53, 53);
+}
+.contacttext a:hover{
+  color: #43b98e;
+}
+
+.contacttext h2, h3{
+  font-weight: 500;
+  margin-top:40px;
 }
 
 
@@ -342,19 +409,12 @@ font-weight:350 ;
     background-color: rgb(255, 255, 255);
 
   }
-  .inner_header{
-  width: 60%;
-  }
-  .navigation{
-    width: 100%;
-  }
   .navigation a{
     font-size: 10px;
   }
   #Path_green{
     visibility: hidden;
     overflow: hidden;
-
   }
   #pics {
     position: absolute;
@@ -388,84 +448,9 @@ p{
 font-size: 12px;}
 }
 
-.content{
-  padding:20px;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  border-radius: 40px;
-  margin:200px;
-  margin-top: 400px;
 
-  font-size:20px;
-  position: relative;
-  background-color: #e7e7e7;
-
-}
-.content p{
-  padding: 20px;
-}
-.partners{
-  text-align:center;
-  margin:50px 200px;
-  border-radius: 40px;
-  position: relative;
-  padding:40px;
-  /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
-  color: #444;
-  background-color: #e7e7e7;
-}
-.partners h2{
-  border: 3px solid grey;
-  border-radius:20px;
-  margin-bottom: 20px;
-}
-h6{
-  color: #444;
-}
-
-.activities-content h2{
-  
-  border: 4px solid rgb(40, 197, 171);
-  width: max-content; /*MONO STA GRAMMATA TO PLAISIO!*/
-  border-radius: 40px;
-  padding:10px;
-  margin: 60px 70px 40px 50px;
-  float: left;
-  color:#444;
-}
-.activities-content h3{
-  margin:60px ;
-  color:#444;
-  font-weight: 500;
-
-}
-#icsdcompany{
-  float: right;
-  margin: 40px;
-  width:280px;
-  height:130px;
-}
-.titlecolor{
-  font-size:20px;
-  color: #43b98e;
-}
-.activities-content p{
-font-weight: 200;
-}
-.company{
-  margin:30px;
-
-  width: 45%;
-  height:45%;
-
-}
-.text{
-  float:left;
-  width: 70%;
-
-}
-li{
-  color:#25998a;
-  float: left;
-  font-weight: 600;
-
+@media only screen and (min-width: 1500px){
+  #Path_green{
+    width: 1900px;
+  }
 }
