@@ -2,48 +2,34 @@
     margin: 0;
     padding: 0;
     list-style: none;
-    font-family: Segoe UI;
-    
+    font-family: Montserrat,"Helvetica Neue",Helvetica;
+    text-decoration: none;
   }
 
-/* .header{
-    width: 100%;
-    height: 125px;
-    background-color: #ffffff ;
-  } */
-  
 body{
-  margin:0;
-  padding:0;
-  box-sizing: border-box;
-  background-color: rgb(221, 221, 221) !important
+    margin:0;
+    padding:0;
+    background-color: rgb(221, 221, 221) !important
+  
+  }
 
-}
-.imgcontent{
-  padding:50px;
-}
-.imgcontent img{
-  width:100%;
-  height: auto;
-}
+/* -------------------------NAVIGATION----------------------- */
 
-.headingbox{
+
+.header{
   background-color:rgb(129, 187, 166);
   height: 150px;
-  top: 0;
   margin-left: 20%;
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
   width: 60%;
-  z-index: -1;
-  position: relative;
-}
+  }
+
 .inner_header{
   position: relative;
-    width: 45%;
-    height: 100%;
-    margin: 0 auto;  
-
+  width: 75%;
+  height: 100%;
+  margin: 0 auto;  
   }
   
 /* .logo_container{
@@ -74,23 +60,21 @@ body{
   color: rgb(163, 202, 163);
   }
   
-  
 .navigation{
   position: relative;
- overflow: visible;
- background: #9acebb;
- display: flex;
- border: 1px solid transparent;
- box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
- border-radius: 24px;
- float: right;
- margin-top: 30px;
+  overflow: visible;
+  background: #9acebb;
+  display: flex;
+  border: 1px solid transparent;
+  box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
+  border-radius: 24px;
+  float: right;
+  margin-top: 30px;
       -webkit-box-shadow: 0 05px 4px -4px #777;
       -moz-box-shadow: 0 05px 4px -4px #777;
       box-shadow: 0 05px 4px -4px #777;
-   
- 
   }
+
 .navigation a {
   position: relative;
   float: right;
@@ -103,14 +87,17 @@ body{
   color:white;
   font-size: 18px;
   }
+
 .navigation a:hover{
-    color: rgb(55, 56, 55);
+  color:#646464;
   }
+
 .navigation a.active {
   background-color: rgb(206, 206, 206);
   border-radius: 20px;
   }
-
+/* ---------------------------------------------------------- */
+/* ------------------------HOME STYLING------------------------- */
 #picsshoes {
 	position: absolute;
 	width: 426px;
@@ -118,9 +105,7 @@ body{
 	left: 142px;
 	top: 200px;
   z-index: -1;
-  
-}
-
+ }
 
 .Path_green{
 	position: absolute;
@@ -130,7 +115,13 @@ body{
   z-index: -10;
   opacity: 0.9;
 	fill: rgb(157, 201, 185);
-}
+ }
+
+
+.imgcontent img{
+  width:100%;
+  height: auto;
+ }
 
 #title h1{
   position: absolute;
@@ -138,87 +129,203 @@ body{
   left:650px;
   text-align: left;
   font-style: italic;
-  font-weight: bold;
-  font-size: 45px;
+  font-size: 50px;
   color: rgb(255, 255, 255);
   }  
 
-/* -----------------------------CIRCLE----------------------------- */
-/* .circle-without-text {
-  border-radius: 50%;
-  width: 330px;
-  height: 330px;
-  top: 300px;
-  right: 100px;
-  margin: 100px;
-  background: rgb(141,235,169);
-  background: linear-gradient(90deg, rgba(141,235,169,1) 8%, rgba(107,217,142,1) 18%, rgba(33,204,113,1) 36%, rgba(36,196,89,1) 53%, rgba(14,199,116,1) 76%, rgba(139,209,164,1) 100%);
-  -webkit-box-shadow: 0 05px 4px -4px rgb(109, 109, 109);
-  -moz-box-shadow: 0 05px 4px -4px rgb(156, 156, 156);
-  box-shadow: 0 05px 4px -4px rgb(107, 107, 107);
+
+
+/* ------------------------------------------------------------------ */
+/* ------------------------------ABOUT and Activities-------------------------- */
+
+
+
+
+
+
+  
+/* ---------------------------------------------------------------------- */
+/*----------------------------- ACTIVITIES -------------------------------*/
+
+.main-content{
+  padding:15px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 40px;
+  margin:100px;
   position: relative;
-   }
-.circle-without-text:hover{
-  transform: scale(1.3);
-} */
-/* .text-inside-circle {
-  top: 40px;
-  position: absolute;
-  font-size: 20px;
-  margin:15px;
-  
-  
-  align-items: center;
-  text-align: center; 
-  font-weight: bold;
-  justify-content: center;
-  display: block;
-
-   } */
-
-/* .text-inside-circle h1{
-    position: relative;
-    font-size: 25px;
-    margin:10px;
-    color: white;
-    bottom: 0;
-    display: flex;
-    padding: 5px;
-    text-align: center; 
-    font-weight: bold;
-    justify-content: center;
- } */
- /* .readmore{
-   color:#3d3d3d;
-   font-size: 16px;
+  background-color: #e7e7e7;
  }
-.material-icons{
-  color: #fff;
-  font-size: 40px !important;
+
+.grid{
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(2, 50%);
+  gap: 20px;
+  padding: 10px;
+
+ }
+
+.contenttitle{
+  font-size: 18px;
+  color:rgb(111, 161, 143);
+  margin: 10px;
+  text-align: center;
+  
 
 }
-.material-icons:hover {
-  transform: scale(2);
-  color:#3d3d3d
-} */
-/* --------------------------------------------------------------- */
+
+/* --------------------------------HOME--------------------------------- */
+
+.content{
+  padding:15px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 40px;
+  margin:50px 100px;
+  margin-top: 400px;
+  font-size:20px;
+  position: relative;
+  background-color: #e7e7e7;
+}
+
+.content p{
+  padding: 20px; 
+}
+
+.content a{
+  text-decoration: none;
+}
+.partners{
+  text-align:center;
+  padding:40px;
+  margin-top: 30px;
+  font-size:16px;
+}
+
+.partners h2{
+  border: 4px solid rgb(107, 192, 178);
+  width: max-content; 
+  float: left;
+  border-radius: 40px;
+  padding:10px;
+  color:#646464;
+  margin: 10px 50px;
+} 
+
+h6{
+  color: #646464;
+}
+
+
+/* ----------------------COMPANY--------------------------- */
+
+
+.main-content > h2{
+  border: 4px solid rgb(107, 192, 178);
+  width: max-content; 
+  border-radius: 40px;
+  padding:10px;
+  margin: 60px 70px 40px 50px;
+  float: left;
+  color:#646464;
+}
+.main-content > h3{
+  margin:60px ;
+  color:#646464;
+  font-weight: 500;
+
+}
+.main-content a{
+  color: rgb(107, 192, 178);
+}
+
+#icsdcompany{
+  float: right;
+  width:280px;
+  margin: 50px;
+  height:130px;
+}
+.tcolor{
+  font-size:20px;
+  color: rgb(129, 187, 166);
+}
+.main-content p{
+font-weight: 300;
+
+}
+.companyimg{
+  margin:30px;
+  width: 45%;
+  height:45%;
+
+}
+.companytext{
+  float:left;
+  width: 70%;
+
+}
+.companytext li{
+  color: rgb(90, 112, 104);
+  font-weight: 700;
+  text-align:justify;
+
+}
+.companytext h3{
+  color: rgb(129, 187, 166);
+}
+.text h3{
+  color: rgb(129, 187, 166);
+  float: left;
+  font-weight: 600;
+
+}
+/* ---------------------------------------------------------- */
 /*------------------------- FOOTER -------------------------------*/
 footer{
   position: relative;
-  height: auto;
-  width: 100%;
   border-radius: 40px 40px 0 0;
-  background-color: rgb(129, 187, 166);
-  font-size: 13px;
-  z-index: 0;
-  
+  background-color:rgb(129, 187, 166);
+  height: 250px;
+  margin-left: 5%;
+  width: 90%;
     }     
 .footercontent img{
-  margin: 40px;
+  margin: 60px 20px;
   width: 80%;
   height: auto;
 }
 
+.contactinfo{
+  float: right;
+  margin: 40px;
+   color:#646464;
+   font-weight: 500;
+}
+.contactinfo h2{
+  font-size: 20px;
+  color: #fff;
+}
+
+ul .icon{
+  font-size: 20px;
+  color: #fff;
+  padding:5px;
+}
+
+.credits {
+  text-align: center;
+  font-size: 14px;
+}
+
+.contactinfo h2{
+text-align: center;
+}
+
+.contactinfo a{
+  color: #646464;
+}
+.contactinfo a:hover{
+  color: #fff;
+}
 #erasmus {
 	width: 277px;
 	height: 56px;
@@ -231,163 +338,20 @@ footer{
 #ICSD {
 	width: 235px;
 	height: 100px;
-
 }
+
 /* ------------------------------------------------------------- */
-/* ------------------------------ABOUT-------------------------- */
-
-
-/* section{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-    font-size: 1.1em;
-    line-height: 1.5;
-    text-align: center;
-
-} */
-
-  /* list-style-type: none;
-  width: 80%;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 1em;
-    background-color: azure;
-    color: #333; */
-  
-/* ---------------------------------------------------------------------- */
-/*----------------------------- ACTIVITIES -------------------------------*/
-/* .container {
-  position: relative;
-  margin:100px;
-  background: #e7e7e7;
-  font-size: 14px;
-  min-height: 700px;  
-  height:100%;
-  padding:15px;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  border-radius: 40px;
-    } */
-
-.main-content{
-  padding:15px;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  border-radius: 40px;
-  margin:100px;
-  position: relative;
-  background-color: #e7e7e7;
-
-  
-}
-.grid{
-  display: grid;
-  position: relative;
-  grid-template-columns: repeat(2, 50%);
-  grid-template-rows: repeat(3);
-  gap: 10px;
-  padding: 10px;
-
-}
-
-.contenttitle{
-  font-size: 18px;
-  color:rgb(111, 161, 143);
-  margin: 10px;
-  text-align: center;
-  
-
-}
-.content{
-  padding:20px;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  border-radius: 40px;
-  margin:50px 150px;
-  margin-top: 400px;
-  font-size:20px;
-  position: relative;
-  background-color: #e7e7e7;
-
-}
-.content p{
-  padding: 20px; 
-}
-.content a{
-  text-decoration: none;
-
-}
-.partners{
-  text-align:center;
-  margin:50px 150px;
-  border-radius: 40px;
-  position: relative;
-  padding:40px;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  color: #444;
-  background-color: #e7e7e7;
-}
-.partners h2{
-  border: 3px solid grey;
-  border-radius:20px;
-  margin-bottom: 20px;
-}
-h6{
-  color: #444;
-}
-
-.main-content > h2{
-  
-  border: 4px solid rgb(107, 192, 178);
-  width: max-content; /*MONO STA GRAMMATA TO PLAISIO!*/
-  border-radius: 40px;
-  padding:10px;
-  margin: 60px 70px 40px 50px;
-  float: left;
-  color:#444;
-}
-.main-content > h3{
-  margin:60px ;
-  color:#444;
-  font-weight: 500;
-
-}
-#icsdcompany{
-  float: right;
-  margin: 40px;
-  width:280px;
-  height:130px;
-}
-.titlecolor{
-  font-size:20px;
-  color: rgb(129, 187, 166);
-}
-.main-content p{
-font-weight: 200;
-}
-.company{
-  margin:30px;
-
-  width: 45%;
-  height:45%;
-
-}
-.text{
-  float:left;
-  width: 70%;
-
-}
-li{
-  color: rgb(129, 187, 166);
-  float: left;
-  font-weight: 600;
-
-}
+/* -----------------------CONTACt------------------------- */
 
 .contacttext{
+  color:#646464;
   margin-left: 350px;
+  position: relative;
 }
 
 .contacttext a{
-  color: rgb(53, 53, 53);
+  color:#646464;;
+
 }
 .contacttext a:hover{
   color: #43b98e;
@@ -395,8 +359,42 @@ li{
 
 .contacttext h2, h3{
   font-weight: 500;
-  margin-top:40px;
+  margin-top:30px;
+  color:#646464;
 }
+
+
+
+b{
+  font-weight: 600;
+  color:rgb(83, 104, 96);
+ }
+ 
+ p{
+   text-align: justify;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* -------------------------------------------------------------- */
@@ -405,52 +403,97 @@ li{
 
 @media only screen and (max-width : 620px) {
 
-  body {
-    background-color: rgb(255, 255, 255);
+html,body{
+    overflow-x: hidden;
+  }
 
+.header{
+  height: 80px;
+  width: 100%;
+  margin: 0;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
   }
-  .navigation a{
-    font-size: 10px;
+    
+.inner_header{
+  width: 100%;
+  margin: 0;  
   }
-  #Path_green{
-    visibility: hidden;
-    overflow: hidden;
+  
+.navigation{
+  width: 100%;
+  margin-top:10px;
   }
-  #pics {
-    position: absolute;
-    top: 50px;
-    margin-top: 0px;
-    left: 0px;
+
+.navigation a {
+  padding: 20px 15px;
+  width: 100%;
+  font-size: 10px;
   }
-  .footer {
-    width: 100%;
-    position: relative;
-  }
-  .activities-content{
-     padding: 10px;
-    margin: 0;
-  }
-.grid{
-  display: table;
 
 
-}
+
+footer {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  height: 100%;
+  margin:0px;
+  }
+  
 .content{
+    margin: 0px;
+    padding: 0px;
+    border-radius: 10px;
+  }
+  
+.main-content{
+  padding: 0px;
+  margin: 0px;
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+  }
+  
+.contacttext{
+  height: 100%;
+  width: 100%;
   margin: 0px;
   padding: 0px;
-  width: 100%;
 }
+
+.grid{
+  display:table;
+}
+
 img{
   grid-row: 3/4;
-  width:200px;
-}
-p{
-font-size: 12px;}
+  width:300px;
 }
 
 
-@media only screen and (min-width: 1500px){
-  #Path_green{
+.company{
+  width:300px;
+}
+
+
+.footercontent img{
+  margin: 10px;
+}
+
+.main-content h4{
+  padding:30px;
+}
+
+.main-content h2{
+  margin:20px 90px;
+  }
+
+
+
+}
+@media only screen and (min-width: 1800px){
+  .Path_green{
     width: 1900px;
   }
+
 }
