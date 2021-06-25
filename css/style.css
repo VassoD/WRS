@@ -13,9 +13,8 @@ body{
   
   }
 
-  img{ 
+img{ 
     border-radius: 5px;
-    height:auto;
     width:100%;
   }
   
@@ -24,16 +23,13 @@ b{
   color:rgb(66, 121, 116);
  }
  
- p{
+p{
    text-align: justify;
  }
-
 
   
 
 /* -------------------------NAVIGATION----------------------- */
-
-
 .header{
   background-color:rgb(129, 187, 166);
   height: 150px;
@@ -74,10 +70,10 @@ b{
     font-weight: 300px;
   } */
   
-.logo_container h1:hover {
+/* .logo_container h1:hover {
   color: rgb(163, 202, 163);
   }
-  
+   */
 .navigation{
   position: relative;
   overflow: visible;
@@ -101,7 +97,6 @@ b{
   padding: 20px 30px;
   text-decoration: none;
   font-family: Segoe UI;
-  height: 100%;
   color:white;
   font-size: 18px;
   }
@@ -120,7 +115,7 @@ b{
 	position: absolute;
 	width: 426px;
 	height: 320px;
-	left: 142px;
+	left: 150px;
 	top: 200px;
   z-index: -1;
  }
@@ -139,7 +134,7 @@ b{
 #title h1{
   position: absolute;
   top: 300px;
-  left:650px;
+  left:45%;
   text-align: left;
   font-style: italic;
   font-size: 50px;
@@ -157,8 +152,8 @@ b{
   text-align: center;
   grid-area: title;
   place-self: center stretch;
-
 }
+
 .content-text{
   grid-area: text;
   padding:30px;
@@ -170,28 +165,26 @@ b{
 
 .btn {
   display: inline-block;
-  background-color: rgb(66, 116, 108);
+  background-color: rgb(66, 121, 116);
   color:white;
   padding: 1em 2em;
   border-radius: 8px;
   margin:0.5em 0;
   font-size:16px;
-  
 }
 
 .btn:hover {
   background-color: white;
-  color: #444;
+  color: #646464;
+  font-weight: bold;
 }
-
 
 .content .imgcontent{
   grid-area: img ;
   padding:20px;
   place-self: center stretch;
-
-
 }
+
 .imgcontent img{
   width:100%;
 }
@@ -210,7 +203,7 @@ b{
   border-radius: 40px;
   margin:5%;
   margin-top: 400px;
-  font-size:18px;
+  font-size:1.1em;
   position: relative;
   /* background-color: #e7e7e7; */
   background-color: #e9e9e9;
@@ -222,14 +215,19 @@ b{
 .partners{
   text-align:center;
   padding:30px 20px;
-  font-size:16px;
+  font-size:1em;
   grid-row: 3;
   /* grid-column: 1 / 4; */
   grid-area: partners;
 }
+
 .partners p{
   margin-top:10px;
+  font-weight:500;
+  color:#646464;
+
 }
+
 .partners h2{
   border: 4px solid rgb(107, 192, 178);
   width: max-content; 
@@ -245,8 +243,8 @@ h6{
   text-align: right;
   float:right;
 }
-
-/* ------------------------------ABOUT and Activities GRID-------------------------- */
+/* ---------------------------------------------------------------------------------- */
+/* ------------------------------About and Activities GRID-------------------------- */
 .grid{
   display: grid;
 
@@ -261,8 +259,9 @@ h6{
   row-gap: 15px;
   column-gap: 20px;
  }
+
 .grid p{
-  font-size:15px;
+  font-size:1em;
   line-height: 1.5em;
   letter-spacing: 0.1px;
   font-weight: 300;
@@ -271,16 +270,18 @@ h6{
 .grid1{
   grid-area: grid1;
   place-self: center stretch;
-
 }
+
 .grid2{
   place-self: center stretch;
   grid-area: grid2;
 }
+
 .grid3{
   grid-area: grid3;
   place-self: center stretch;
 }
+
 .grid4{
   padding: 20px;
   place-self: center stretch;
@@ -293,14 +294,16 @@ h6{
 .grid5{
   grid-area: grid5;
 }
+
 .grid6{
   grid-area: grid6;
-  place-self: center stretch;
 }
 
 .main-content .imgcontent{
     grid-area: img ;
     place-self: center stretch;
+    padding: 5% 0%;
+    margin:5% 0% 2% 0%;
 
  }
 
@@ -316,17 +319,28 @@ h6{
   background-color: #e9e9e9;
  }
 
- .main-content a{
-  color: rgb(79, 155, 142);
-  font-weight:500;
+ .main-content a, .content-text p a{
+  color: rgb(66, 121, 116);
+  font-weight:600;
 }
 
+.main-content a:hover, .content-text p a:hover{
+  color: #fff;
+}
 
 .wrs {
   margin-top: 30px;
 }
 
-/* ----------------------COMPANY--------------------------- */
+.p-color{
+    font-size:19px;
+    font-weight: 400;
+    color:  #646464;
+  }
+
+
+/* -------------------------------------------------------------- */
+/* ----------------------COMPANY----------------------------- */
 
 
 .main-content > h2{
@@ -345,23 +359,28 @@ h6{
 
 }
 
-
 #icsdcompany{
   float: right;
   width:280px;
   margin: 50px;
   height:130px;
 }
+
 .tcolor{
   font-size:19px;
   font-weight: 500;
   color:  rgb(111, 161, 143);
-
 }
+
 h3{
+  letter-spacing: 0.3px;
   font-size:18px;
 }
-
+.companytext h4{
+  font-size: 23px;
+  color: #646464;
+  letter-spacing: 0.5px;
+}
 .companyimg{
   margin:30px;
   width: 45%;
@@ -374,23 +393,25 @@ h3{
   padding-top: 20px;
   letter-spacing: 0.2px;
   line-height: 1.5em;
-
-
-
 }
+.companytext p{
+  font-weight: 300;
+  letter-spacing: 0.3px;
+}
+
 .companytext li{
-  color: rgb(99, 145, 128);
+  color: rgb(111, 161, 143);
   font-weight: 700;
   text-align:justify;
-
 }
 .companytext h3{
-  color: rgb(99, 145, 128);
+  color: rgb(111, 161, 143);
+  font-weight:600;
 }
 
 /* ---------------------------------------------------------- */
 
-/* -----------------------CONTACT ------------------------- */
+/* -----------------------CONTACT --------------------------- */
 
 .contacttext{
   color:#646464;
@@ -405,7 +426,7 @@ h3{
 
 }
 .contacttext a:hover{
-  color: #43b98e;
+  color: #fff;
 }
 
 .contacttext h2, h3{
@@ -413,8 +434,6 @@ h3{
   margin-top:30px;
   color:#646464;
 }
-
-
 
 
 /*------------------------------------------------------------  */
@@ -426,11 +445,10 @@ footer{
   height: 250px;
   margin-left: 5%;
   width: 90%;
-    }     
+    }    
+
 .footercontent img{
-  margin: 60px 20px;
-  width: 80%;
-  height: auto;
+  margin: 60px 0px 60px 50px;
 }
 
 .contactinfo{
@@ -457,6 +475,7 @@ ul .icon{
 
 .contactinfo h2{
 text-align: center;
+font-size: 30px;
 }
 
 .contactinfo a{
@@ -483,32 +502,8 @@ text-align: center;
 
 /* ------------------------------------------------------------- */
 .credits{
-  color:#444;
+  color: #444;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -525,7 +520,7 @@ html,body{
 #picsshoes {
     position: absolute;
     width: 350px;
-    height: 250px;
+    height: 270px;
     left: 10px;
     top: 80px;
     z-index: -1;
@@ -538,7 +533,6 @@ html,body{
     text-align: left;
     font-style: italic;
     font-size: 38px;
-    color: rgb(255, 255, 255);
     }  
 
 .header{
@@ -565,8 +559,6 @@ html,body{
   font-size: 10px;
   }
 
-
-
 footer {
   width: 100%;
   border-radius: 10px 10px 0 0;
@@ -575,49 +567,57 @@ footer {
   }
   
 .content{
-    margin: 380px 0 0 0 ;
+    margin: 380px 0 40px 0 ;
+    padding:0;
     border-radius: 10px;
     display:table;
   }
   
 .main-content{
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
   border-radius: 10px;
   height: 100%;
   width: 100%;
+  margin: 30px 0px 40px 0px;
+  text-align: center;
   }
-  
+
+.main-content>h3{
+  margin:5px 20px;
+  padding: 0px 20px;
+}
+
 .contacttext{
-  height: 100%;
-  width: 100%;
-  margin: 0px;
-  padding: 0px;
+  margin: 10px 0px 40px 0px;
+  padding: 20px 0px;
+}
+.contacttext p{
+  padding: 0px 20px;
+}
+.contacttext h3{
+  margin: 0% 5%;
 }
 
 .grid{
   display:table;
 }
 
+.companytext {
+  padding: 5% 10%;
+  margin:0 5%;
+}
 
-.companytext{
-  padding:30px 60px;
+.companytext h4{
+  padding: 0px;
 }
 
 .footercontent img{
-  margin: 10px;
-}
-
-.main-content h4{
-  padding:30px;
+  margin: 5% 10%;
 }
 
 .main-content h2{
-  margin:20px 90px 0px;
+  margin:10% 25% 0;
   }
-.main-content>h3{
-  text-align: center;
-}
 
 .companyimg{
   width: 100%;
@@ -625,20 +625,54 @@ footer {
 }
 
 .partners h2{
-  
   margin: 20px 60px ;
 }
 
+#icsdcompany{
+margin: 10% 14%;
 
 }
 
+iframe{
+  width: 350px;
+}
 
-
-@media only screen and (min-width: 1800px){
+}
+@media only screen and (min-width: 1700px){
   .Path_green{
-    width: 1900px;
+    width: 1700px;
+    height: 786.849px;
+    top: -135px;
+   
   }
-#title{
-  font-size: 55px;
+
+  #title h1{
+    top: 300px;
+    left:750px;
+    font-size: 65px;
+    }  
+    #picsshoes {
+      position: absolute;
+      width: 526px;
+      height: 420px;
+      left: 142px;
+      top: 150px;
+      z-index: -1;
+     }
+    }
+  
+@media only screen and (min-width: 1900px){
+  .Path_green{
+    width: 2000px;
+    top: -150px;
+
+  }
 }
+
+
+@media only screen and (min-width: 2500px){
+  .Path_green{
+    width: 2600px;
+    top: -150px;
+  }
 }
